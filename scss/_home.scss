@@ -1,0 +1,84 @@
+.mobile-home-container {
+  margin: 6rem auto 0 auto;
+  padding: 0 2rem;
+  max-width: 1170px;
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+
+  h2 {
+    font-weight: 800;
+  }
+}
+
+.card {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid $neutral150;
+  background: $white;
+  box-shadow: $drop-shadow;
+  border-radius: $radius;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  transition: $transition;
+
+  &:hover {
+    background: $primary100;
+  }
+}
+
+.first-column {
+  .product-name {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.75rem;
+
+    img {
+      width: 32px;
+      border: 1px solid $neutral100;
+      border-radius: 50%;
+    }
+  }
+
+  .product-prices {
+    display: flex;
+    gap: 1rem;
+
+    .price-difference {
+      font-weight: 700;
+    }
+  }
+}
+
+.card-1 .product-prices .price-difference {
+  color: $danger500;
+}
+
+.card-2 .product-prices .price-difference {
+  color: $success500;
+}
+
+.card-3 .product-prices .price-difference {
+  color: $success500;
+}
+
+.second-column {
+  font-size: 1rem;
+  background: transparent;
+  color: $neutral800;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
