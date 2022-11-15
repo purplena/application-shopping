@@ -1,0 +1,229 @@
+.back-home {
+  display: inline-block;
+  margin-top: 6rem;
+  padding: 1rem;
+  background: $neutral200;
+  margin-left: 2rem;
+  color: $primary500;
+  text-transform: uppercase;
+  border-radius: $radius;
+}
+
+.buttons {
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 200px;
+
+  h1 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .dashed-border {
+    border: 1px dashed $primary500;
+    border-radius: 5px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    max-width: 470px;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  span {
+    color: $neutral700;
+    font-weight: 700;
+  }
+}
+
+// Common class button
+.button {
+  display: inline-block;
+  border-radius: $radius;
+  text-transform: capitalize;
+  border: transparent;
+  background: transparent;
+  transition: $transition;
+  cursor: pointer;
+  font-weight: 700;
+}
+// small button
+.small {
+  padding: 0.5rem 1rem;
+}
+// medium button
+.medium {
+  padding: 0.625rem 1rem;
+}
+// large button
+.large {
+  padding: 0.75rem 1rem;
+}
+
+// PRIMARY
+// Hover,active, disabled  - pseudo classes with default button
+.primary-default {
+  background: $primary600;
+  color: $white;
+
+  &:hover {
+    background: $primary500;
+  }
+
+  &:active {
+    background: $primary700;
+  }
+
+  &:disabled {
+    border: 1px solid $neutral200;
+    background: $neutral150;
+    color: $neutral700;
+  }
+}
+
+// Loading Primary button
+.primary-loading {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary600;
+  color: $white;
+}
+
+// an example how it looks in different states
+.primary-hover {
+  background: $primary500;
+  color: $white;
+}
+
+.primary-active {
+  background: $primary700;
+  color: $white;
+}
+
+.primary-disabled {
+  border: 1px solid $neutral200;
+  background: $neutral150;
+  color: $neutral700;
+}
+
+// TERTIARY
+// Hover,active, disabled - pseudo classes with default button
+.tertiary-default {
+  background: $white;
+  color: $neutral800;
+  border: 1px solid $neutral200;
+
+  &:hover {
+    background: $neutral100;
+  }
+
+  &:active {
+    background: $neutral150;
+  }
+
+  &:disabled {
+    border: 1px solid $neutral200;
+    background: $neutral150;
+    color: $neutral700;
+  }
+}
+
+// an example how it looks in different states
+.tertiary-hover {
+  background: $neutral100;
+  color: $neutral800;
+}
+
+.tertiary-active {
+  background: $neutral150;
+  color: $neutral800;
+}
+
+.tertiary-disabled {
+  border: 1px solid $neutral200;
+  background: $neutral150;
+  color: $neutral700;
+}
+
+// SUCCESS ACTIONS
+// Hover,active, disabled - pseudo classes with default button
+.success-default {
+  background: $success600;
+  color: $white;
+
+  &:hover {
+    background: $success500;
+  }
+
+  &:active {
+    background: $success700;
+  }
+
+  &:disabled {
+    border: 1px solid $neutral200;
+    background: $neutral150;
+    color: $neutral700;
+  }
+}
+
+// an example how it looks in different states
+.success-hover {
+  background: $success500;
+  color: $white;
+}
+
+.success-active {
+  background: $success700;
+  color: $white;
+}
+
+.success-disabled {
+  border: 1px solid $neutral200;
+  background: $neutral150;
+  color: $neutral700;
+}
+
+// DANGER ACTIONS
+// Hover,active, disabled - pseudo classes with default button
+.danger-default {
+  background: $danger600;
+  color: $white;
+
+  &:hover {
+    background: $danger500;
+  }
+
+  &:active {
+    background: $danger700;
+  }
+
+  &:disabled {
+    border: 1px solid $neutral200;
+    background: $neutral150;
+    color: $neutral700;
+  }
+}
+
+// an example how it looks in different states
+.danger-hover {
+  background: $danger500;
+  color: $white;
+}
+
+.danger-active {
+  background: $danger700;
+  color: $white;
+}
+
+.danger-disabled {
+  border: 1px solid $neutral200;
+  background: $neutral150;
+  color: $neutral700;
+}

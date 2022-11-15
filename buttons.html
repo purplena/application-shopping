@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- scss -->
+    <link rel="stylesheet" href="/scss/main.scss" />
+    <title>buttons</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <!-- First half of navbar -->
+        <div class="nav-header">
+          <img
+            src="./images/logo.png"
+            alt="logo"
+            class="nav-logo"
+            id="nav-logo"
+          />
+          <button type="button" class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars menu-closed"></i>
+            <i class="fa-solid fa-x menu-open"></i>
+          </button>
+        </div>
+        <!-- Second part of navbar -->
+        <div class="nav-links" id="nav-links">
+          <!-- single link -->
+          <li class="link-1">
+            <a href="#!" class="nav-link" target="_blank"> accueil</a>
+            <div class="underline"></div>
+          </li>
+          <!-- end og single link -->
+          <!-- single link -->
+          <li class="link-2">
+            <a href="#!" target="_blank" class="nav-link">produits</a>
+            <div class="underline"></div>
+          </li>
+          <!-- end og single link -->
+          <!-- single link -->
+          <li class="link-3">
+            <a href="#!" class="nav-link" target="_blank">listes des courses</a>
+            <div class="underline"></div>
+          </li>
+          <!-- end og single link -->
+          <!-- single link -->
+          <li class="link-4">
+            <a href="#!" class="nav-link" target="_blank">mon compte</a>
+            <div class="underline"></div>
+          </li>
+          <!-- end og single link -->
+          <!-- single link -->
+          <li class="link-5">
+            <a href="#!" class="nav-link" target="_blank">se déconnecter</a>
+            <div class="underline"></div>
+          </li>
+          <!-- end og single link -->
+        </div>
+        <!-- Third part of navbar -->
+        <div class="log-in">
+          <img
+            src="./images/Login-icon.png"
+            alt="log-in-icon"
+            class="log-in-icon"
+          />
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- back home -->
+    <a href="./index.html" class="back-home">back home</a>
+    <section class="buttons">
+      <h1>primary actions</h1>
+      <div class="dashed-border">
+        <div class="flex">
+          <span>DEFAULT</span>
+          <button class="button small primary-default">text</button>
+          <button class="button medium primary-default">text</button>
+          <button class="button large primary-default">text</button>
+        </div>
+        <div class="flex">
+          <span>HOVER</span>
+          <button class="button small primary-hover">text</button>
+          <button class="button medium primary-hover">text</button>
+          <button class="button large primary-hover">text</button>
+        </div>
+        <div class="flex">
+          <span>ACTIVE</span>
+          <button class="button small primary-active">text</button>
+          <button class="button medium primary-active">text</button>
+          <button class="button large primary-active">text</button>
+        </div>
+        <div class="flex">
+          <span>LOADING</span>
+          <button class="button small primary-loading">
+            <i class="fa-solid fa-spinner"></i>text
+          </button>
+          <button class="button medium primary-loading">
+            <i class="fa-solid fa-spinner"></i>text
+          </button>
+          <button class="button large primary-loading">
+            <i class="fa-solid fa-spinner"></i>text
+          </button>
+        </div>
+        <div class="flex">
+          <span>DISABLED</span>
+          <button class="button small primary-disabled">text</button>
+          <button class="button medium primary-disabled">text</button>
+          <button class="button large primary-disabled">text</button>
+        </div>
+      </div>
+      <!-- Tertiary action -->
+      <h1>Tertiary action</h1>
+      <div class="dashed-border">
+        <div class="flex">
+          <span>DEFAULT</span>
+          <button class="button small tertiary-default">text</button>
+          <button class="button medium tertiary-default">text</button>
+          <button class="button large tertiary-default">text</button>
+        </div>
+        <div class="flex">
+          <span>HOVER</span>
+          <button class="button small tertiary-hover">text</button>
+          <button class="button medium tertiary-hover">text</button>
+          <button class="button large tertiary-hover">text</button>
+        </div>
+        <div class="flex">
+          <span>ACTIVE</span>
+          <button class="button small tertiary-active">text</button>
+          <button class="button medium tertiary-active">text</button>
+          <button class="button large tertiary-active">text</button>
+        </div>
+        <div class="flex">
+          <span>DISABLED</span>
+          <button class="button small tertiary-disabled">text</button>
+          <button class="button medium tertiary-disabled">text</button>
+          <button class="button large tertiary-disabled">text</button>
+        </div>
+      </div>
+
+      <!-- Success action -->
+      <h1>Success action</h1>
+      <div class="dashed-border">
+        <div class="flex">
+          <span>DEFAULT</span>
+          <button class="button small success-default">text</button>
+          <button class="button medium success-default">text</button>
+          <button class="button large success-default">text</button>
+        </div>
+        <div class="flex">
+          <span>HOVER</span>
+          <button class="button small success-hover">text</button>
+          <button class="button medium success-hover">text</button>
+          <button class="button large success-hover">text</button>
+        </div>
+        <div class="flex">
+          <span>ACTIVE</span>
+          <button class="button small success-active">text</button>
+          <button class="button medium success-active">text</button>
+          <button class="button large success-active">text</button>
+        </div>
+        <div class="flex">
+          <span>DISABLED</span>
+          <button class="button small success-disabled">text</button>
+          <button class="button medium success-disabled">text</button>
+          <button class="button large success-disabled">text</button>
+        </div>
+      </div>
+
+      <!-- Danger action -->
+      <h1>Danger action</h1>
+      <div class="dashed-border">
+        <div class="flex">
+          <span>DEFAULT</span>
+          <button class="button small danger-default">text</button>
+          <button class="button medium danger-default">text</button>
+          <button class="button large danger-default">text</button>
+        </div>
+        <div class="flex">
+          <span>HOVER</span>
+          <button class="button small danger-hover">text</button>
+          <button class="button medium danger-hover">text</button>
+          <button class="button large danger-hover">text</button>
+        </div>
+        <div class="flex">
+          <span>ACTIVE</span>
+          <button class="button small danger-active">text</button>
+          <button class="button medium danger-active">text</button>
+          <button class="button large danger-active">text</button>
+        </div>
+        <div class="flex">
+          <span>DISABLED</span>
+          <button class="button small danger-disabled">text</button>
+          <button class="button medium danger-disabled">text</button>
+          <button class="button large danger-disabled">text</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="first-column">
+          <p class="p1">Mention légales</p>
+          <p>Nous contacter</p>
+        </div>
+
+        <div class="social-icons">
+          <!-- social icon -->
+          <a href="#!" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- social icon -->
+          <a href="#!" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- social icon -->
+          <a href="#!" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="third-column">
+          <p class="p1">Fresh products</p>
+          <p>2022</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
