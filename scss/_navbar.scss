@@ -12,16 +12,17 @@
     max-width: 1170px;
     margin: 0 auto;
     margin: 0 auto;
-    padding: 0.5rem 0;
+    // padding: 0.5rem 0;
 
     // Nav Header
     .nav-header {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      align-content: center;
+      align-items: center;
       padding-left: 2rem;
       padding-right: 2rem;
+      height: 52px;
 
       .nav-logo {
         display: block;
@@ -58,8 +59,6 @@
         color: $primary500;
         letter-spacing: 3.5px;
         font-size: 1.25rem;
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
         background: $neutral100;
         cursor: pointer;
         transition: $transition;
@@ -83,6 +82,7 @@
   .navbar {
     .nav-center {
       display: flex;
+      align-items: center;
       padding-left: 2rem;
       padding-right: 2rem;
 
@@ -130,7 +130,7 @@
 
           .nav-link {
             display: block;
-            padding: 0 1.5rem;
+            padding: 1rem 1.5rem;
             width: auto;
             text-transform: uppercase;
             font-weight: 700;
@@ -145,7 +145,7 @@
 
           .underline {
             position: absolute;
-            top: 38px;
+            top: 50px;
             left: 0;
             height: 2px;
             width: 100%;

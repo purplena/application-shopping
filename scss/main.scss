@@ -12,7 +12,7 @@
 
 /* Global styles */
 img:not(.nav-logo) {
-  width: 100%;
+  // width: 100%;
   display: block;
 }
 
@@ -37,62 +37,4 @@ h3,
 h4 {
   text-transform: uppercase;
   line-height: 1.25;
-}
-//________________________________________________//
-// trier button
-.trier {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.4rem 1rem;
-  border: 1px solid $neutral200;
-  border-radius: $radius;
-  cursor: pointer;
-  background: $white;
-  transition: $transition;
-  text-transform: capitalize;
-
-  &:hover {
-    background: $neutral100;
-  }
-
-  &:active {
-    background: $neutral150;
-  }
-
-  img {
-    height: 10px;
-    width: 10px;
-    justify-items: center;
-    align-self: center;
-  }
-
-  p {
-    font-weight: 700;
-    color: $neutral800;
-  }
-}
-//________________________________________________//
-// classic button
-.btn {
-  text-transform: uppercase;
-  background: $primary600;
-  color: $white;
-  border-radius: $radius;
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  transition: $transition;
-  font-size: 0.75rem;
-  font-weight: 700;
-  border-color: transparent;
-  cursor: pointer;
-
-  &:hover {
-    background: $primary500;
-  }
-
-  &:active {
-    background: $primary700;
-  }
 }

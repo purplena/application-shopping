@@ -51,6 +51,7 @@
   transition: $transition;
   cursor: pointer;
   font-weight: 700;
+  text-transform: uppercase;
 }
 // small button
 .small {
@@ -150,6 +151,21 @@
   border: 1px solid $neutral200;
   background: $neutral150;
   color: $neutral700;
+}
+
+// Tertiaty button with logo
+.tertiary-logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  img {
+    height: 10px;
+    width: 10px;
+    justify-items: center;
+    align-self: center;
+  }
 }
 
 // SUCCESS ACTIONS

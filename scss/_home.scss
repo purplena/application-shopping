@@ -1,5 +1,5 @@
 .mobile-home-container {
-  margin: 6rem auto 0 auto;
+  margin: 5rem auto 0 auto;
   padding: 0 2rem;
   max-width: 1170px;
 }
@@ -16,6 +16,11 @@
 }
 
 .card {
+  // added max-width
+  // not sure yet if necessary
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0.75rem 1.25rem;
   border: 1px solid $neutral150;
   background: $white;
@@ -81,4 +86,81 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
+}
+
+.desktop-home-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-home-container {
+    display: none;
+  }
+
+  .desktop-home-container {
+    display: block;
+    margin: 5rem auto 0 auto;
+    padding: 0 2rem;
+    max-width: 1170px;
+
+    h2 {
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    box-shadow: $drop-shadow;
+
+    tr {
+      th {
+        color: $neutral600;
+        padding: 0.5rem 1rem;
+      }
+
+      .column-heading {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      td {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        img {
+          display: block;
+          height: 32px;
+          width: 32px;
+          border: 1px solid $neutral100;
+          border-radius: 50%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      .name-of-product {
+        padding-left: 1rem;
+      }
+
+      .table-content-center {
+        text-align: center;
+      }
+
+      .price-difference-red {
+        color: $danger500;
+        font-weight: 700;
+      }
+
+      .price-difference-green {
+        color: $success500;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
 }
