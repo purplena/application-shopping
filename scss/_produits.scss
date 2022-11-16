@@ -1,4 +1,4 @@
-.mobile-home-container {
+.mobile-produit-container {
   margin: 5rem auto 0 auto;
   height: calc(100vh - 52px - 141px);
   padding: 0 2rem;
@@ -13,6 +13,23 @@
 
   h2 {
     font-weight: 800;
+  }
+}
+
+.search-bar {
+  margin: 0 auto 2rem auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: $white;
+  border-radius: $radius;
+  padding: 0.5rem 1.25rem;
+  color: $neutral600;
+  box-shadow: $drop-shadow;
+  max-width: 550px;
+
+  p {
+    font-size: 0.75rem;
   }
 }
 
@@ -82,33 +99,150 @@
   cursor: pointer;
 }
 
-.desktop-home-container {
+.desktop-produit-container {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .mobile-home-container {
+  .mobile-produit-container {
     display: none;
   }
 
-  .desktop-home-container {
+  .desktop-produit-container {
     display: block;
-    height: calc(100vh - 52px - 141px);
     margin: 5rem auto 0 auto;
     padding: 0 2rem;
+    height: calc(100vh - 52px - 141px);
     max-width: 1170px;
 
     h2 {
       font-weight: 800;
       margin-bottom: 1.5rem;
     }
+
+    .product-filter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      .search-icon {
+        height: 33px;
+        width: 33px;
+        border-radius: $radius;
+        border: 1px solid $neutral200;
+        background: $white;
+        position: relative;
+        transition: $transition;
+        cursor: pointer;
+
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+          background: $neutral100;
+        }
+
+        &:active {
+          background: $neutral150;
+        }
+      }
+
+      .filter-components {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .page-changer {
+          display: flex;
+          gap: 0.5rem;
+          padding: 0.42rem;
+          background: $white;
+          border-radius: $radius;
+          border: 1px solid $neutral200;
+          transition: $transition;
+          cursor: pointer;
+
+          &:hover {
+            background: $neutral100;
+          }
+
+          &:active {
+            background: $neutral150;
+          }
+        }
+
+        p {
+          color: $neutral600;
+          font-size: 0.75rem;
+        }
+      }
+    }
   }
 
-  // button "tous les produits"
-  .upper-half {
-    button {
-      display: block;
-      margin: 0 auto;
+  .pages-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: $neutral700;
+
+    .carousel-left,
+    .carousel-right {
+      height: 33px;
+      width: 33px;
+      border-radius: $radius;
+      position: relative;
+      cursor: pointer;
+      transition: $transition;
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover {
+        background: $white;
+        box-shadow: $drop-shadow;
+      }
+
+      &:active {
+        color: $primary500;
+        font-weight: 700;
+      }
+    }
+
+    .page-number {
+      height: 33px;
+      width: 33px;
+      border-radius: $radius;
+      position: relative;
+      cursor: pointer;
+      transition: $transition;
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover {
+        background: $white;
+        box-shadow: $drop-shadow;
+      }
+
+      &:active {
+        color: $primary500;
+        font-weight: 700;
+      }
     }
   }
 
@@ -140,6 +274,7 @@
     // first row
     tr {
       th {
+        background: $neutral200;
         color: $neutral600;
         padding: 0.5rem 1rem;
         border: transparent;
@@ -194,23 +329,6 @@
         color: $success500;
         font-weight: 700;
       }
-    }
-  }
-
-  .lower-half {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 3rem;
-    .product-container,
-    .price-container {
-      background: $white;
-      height: 200px;
-      flex-grow: 0;
-      flex-shrink: 0;
-      flex-basis: calc(50% - 2rem);
-      box-shadow: $drop-shadow;
-      font-weight: 700;
     }
   }
 

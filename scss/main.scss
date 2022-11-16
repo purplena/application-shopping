@@ -3,6 +3,7 @@
 @import "buttons";
 @import "footer";
 @import "home";
+@import "produits";
 
 * {
   margin: 0;
@@ -12,13 +13,12 @@
 
 /* Global styles */
 img:not(.nav-logo) {
-  // width: 100%;
   display: block;
 }
 
 body {
   font-family: $ff-primary;
-  background: $white;
+  background: $neutral100;
   color: $neutral800;
   line-height: 1.25;
   font-size: 0.875rem;
@@ -37,4 +37,11 @@ h3,
 h4 {
   text-transform: uppercase;
   line-height: 1.25;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }

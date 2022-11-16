@@ -87,13 +87,17 @@
 
     <!-- Home page -->
     <!-- mobile version -->
-    <section class="mobile-home-container">
+    <section class="mobile-produit-container">
       <!-- header and 'trier' button -->
       <div class="mobile-header">
-        <h2>derniers prix</h2>
+        <h2>Tous les produits</h2>
         <button class="button small tertiary-default tertiary-logo">
           <img src="./images/trier.png" alt="filtrer-img" />Trier
         </button>
+      </div>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p>Chercher un produit</p>
       </div>
       <!-- product cards -->
       <div class="product-cards-container">
@@ -159,102 +163,130 @@
       </div>
     </section>
     <!-- Desktop Lay-out-->
-    <section class="desktop-home-container">
-      <article class="upper-half">
-        <h2>derniers prix</h2>
-        <table>
-          <colgroup>
-            <col class="column1" />
-            <col class="column2" />
-            <col class="column3" />
-            <col class="column4" />
-            <col class="column5" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th>
-                <div class="column-heading">
-                  NOM <i class="fa-solid fa-caret-down"></i>
-                </div>
-              </th>
-              <th>
-                <div class="column-heading">
-                  PRIX <i class="fa-solid fa-caret-down"></i>
-                </div>
-              </th>
-              <th>
-                <div class="column-heading">
-                  MAGASIN <i class="fa-solid fa-caret-down"></i>
-                </div>
-              </th>
-              <th>
-                <div class="column-heading">
-                  PROGRESSION <i class="fa-solid fa-caret-down"></i>
-                </div>
-              </th>
-              <th>
-                <div class="column-heading">
-                  ACTION <i class="fa-solid fa-caret-down"></i>
-                </div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="product-name">Nom du produit</td>
-              <td class="table-content-center">15,00&#8364;</td>
-              <td class="table-content-center">
-                <img
-                  class="shop-logo"
-                  src="./images/intermarche.png"
-                  alt="shop-logo"
-                />
-              </td>
-              <td class="table-content-center price-difference-red">+15%</td>
-              <td class="table-content-center">
-                <i class="fa-solid fa-pencil"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="product-name">Nom du produit</td>
-              <td class="table-content-center">6,30&#8364;</td>
-              <td class="table-content-center">
-                <img
-                  src="./images/lidl.png"
-                  alt="shop-logo"
-                  class="shop-logo"
-                />
-              </td>
-              <td class="table-content-center price-difference-green">-5%</td>
-              <td class="table-content-center">
-                <i class="fa-solid fa-pencil"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="product-name">Nom du produit</td>
-              <td class="table-content-center">5,35&#8364;</td>
-              <td class="table-content-center">
-                <img
-                  src="./images/lidl.png"
-                  alt="shop-logo"
-                  class="shop-logo"
-                />
-              </td>
-              <td class="table-content-center price-difference-green">-10%</td>
-              <td class="table-content-center">
-                <i class="fa-solid fa-pencil"></i>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <button class="button medium primary-default">tous les produits</button>
-      </article>
-      <article class="lower-half">
-        <div class="product-container"></div>
-        <div class="price-container"></div>
-      </article>
-    </section>
+    <section class="desktop-produit-container">
+      <h2>Tous les produits</h2>
+      <div class="product-filter">
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="filter-components">
+          <div class="page-changer">
+            10 <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <p>Nombre de pages</p>
+          <button class="button small tertiary-default tertiary-logo">
+            <img src="./images/trier.png" alt="filtrer-img" />Trier
+          </button>
+        </div>
+      </div>
+      <table>
+        <colgroup>
+          <col class="column1" />
+          <col class="column2" />
+          <col class="column3" />
+          <col class="column4" />
+          <col class="column5" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>
+              <div class="column-heading">
+                NOM <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </th>
+            <th>
+              <div class="column-heading">
+                PRIX <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </th>
+            <th>
+              <div class="column-heading">
+                MAGASIN <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </th>
+            <th>
+              <div class="column-heading">
+                PROGRESSION <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </th>
+            <th>
+              <div class="column-heading">
+                ACTION <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="product-name">Nom du produit</td>
+            <td class="table-content-center">15,00&#8364;</td>
+            <td class="table-content-center">
+              <img
+                class="shop-logo"
+                src="./images/intermarche.png"
+                alt="shop-logo"
+              />
+            </td>
+            <td class="table-content-center price-difference-red">+15%</td>
+            <td class="table-content-center">
+              <i class="fa-solid fa-pencil"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="product-name">Nom du produit</td>
+            <td class="table-content-center">6,30&#8364;</td>
+            <td class="table-content-center">
+              <img src="./images/lidl.png" alt="shop-logo" class="shop-logo" />
+            </td>
+            <td class="table-content-center price-difference-green">-5%</td>
+            <td class="table-content-center">
+              <i class="fa-solid fa-pencil"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="product-name">Nom du produit</td>
+            <td class="table-content-center">5,35&#8364;</td>
+            <td class="table-content-center">
+              <img src="./images/lidl.png" alt="shop-logo" class="shop-logo" />
+            </td>
+            <td class="table-content-center price-difference-green">-10%</td>
+            <td class="table-content-center">
+              <i class="fa-solid fa-pencil"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="pages-container">
+        <div class="carousel-left">
+          <i class="fa-solid fa-less-than"></i>
+        </div>
+        <div class="page-number">
+          <span>1</span>
+        </div>
+        <div class="page-number">
+          <span>2</span>
+        </div>
+        <div class="page-number">
+          <span>3</span>
+        </div>
+        <div class="page-number">
+          <span>...</span>
+        </div>
+        <div class="page-number">
+          <span>10</span>
+        </div>
+        <div class="carousel-right">
+          <i class="fa-solid fa-greater-than"></i>
+        </div>
+      </div>
 
+      <div class="button-container">
+        <button class="button medium primary-default">
+          <a href="./ajouter-produit.html"> ajouter un produit</a>
+        </button>
+        <button class="button medium primary-default">ajouter des prix</button>
+      </div>
+    </section>
     <a href="./buttons.html" class="back-home">buttons page</a>
 
     <!-- Footer -->
