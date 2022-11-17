@@ -4,6 +4,7 @@
 @import "footer";
 @import "home";
 @import "produits";
+@import "ajouter-produit";
 
 * {
   margin: 0;
@@ -12,7 +13,7 @@
 }
 
 /* Global styles */
-img:not(.nav-logo) {
+img {
   display: block;
 }
 

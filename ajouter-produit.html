@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- scss -->
+    <link rel="stylesheet" href="/scss/main.scss" />
+    <title>Shop Application</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <!-- First half of navbar -->
+        <div class="nav-header">
+          <img
+            src="./images/logo.png"
+            alt="logo"
+            class="nav-logo"
+            id="nav-logo"
+          />
+          <button type="button" class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars menu-closed"></i>
+            <i class="fa-solid fa-x menu-open"></i>
+          </button>
+        </div>
+        <!-- Second part of navbar -->
+        <div class="nav-links" id="nav-links">
+          <!-- single link -->
+          <li class="link-1">
+            <a href="index.html" class="nav-link"> accueil</a>
+            <div class="underline"></div>
+          </li>
+          <!-- end og single link -->
+          <!-- single link -->
+          <li class="link-2">
+            <a href="produits.html" class="nav-link">produits</a>
+            <div class="underline"></div>
+          </li>
+          <!-- end og single link -->
+          <!-- single link -->
+          <li class="link-3">
+            <a href="listes.html" class="nav-link">listes des courses</a>
+            <div class="underline"></div>
+          </li>
+          <!-- end og single link -->
+          <!-- single link -->
+          <li class="link-4">
+            <a href="#!" class="nav-link" target="_blank">mon compte</a>
+            <div class="underline"></div>
+          </li>
+          <!-- end og single link -->
+          <!-- single link -->
+          <li class="link-5">
+            <a href="#!" class="nav-link" target="_blank">se déconnecter</a>
+            <div class="underline"></div>
+          </li>
+          <!-- end og single link -->
+        </div>
+        <!-- Third part of navbar -->
+        <div class="log-in">
+          <img
+            src="./images/Login-icon.png"
+            alt="log-in-icon"
+            class="log-in-icon"
+          />
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Home page -->
+    <!-- mobile version -->
+    <section class="mobile-produit-container">
+      <!-- header and 'trier' button -->
+      <div class="mobile-header">
+        <h2>Ajouter un produit</h2>
+        <button class="button small tertiary-default tertiary-logo">
+          <img src="./images/trier.png" alt="filtrer-img" />Trier
+        </button>
+      </div>
+    </section>
+    <!-- Desktop Lay-out-->
+    <section class="desktop-produit-container">
+      <h2>Ajouter un produit</h2>
+      <div class="section-container">
+        <form class="ajouter-produit-form">
+          <div class="table-row-1">
+            <div class="table-row-1-column">
+              <label>Nom</label>
+              <input
+                class="input-row-1"
+                type="text"
+                placeholder="Ex: Patates 1kg"
+              />
+            </div>
+            <div class="table-row-1-column">
+              <label>Catégorie</label>
+              <select class="input-row-1" name="type-de-produit">
+                <option class="select" value="">Select</option>
+                <option class="option" value="alimentaire">Alimentaire</option>
+                <option class="option" value="entretien">
+                  Entretien de maison
+                </option>
+                <option class="option" value="animaux">Animaux</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-row-2">
+            <div class="table-row-2-column">
+              <label for="">Prix</label>
+              <input
+                class="input-row-2"
+                type="text"
+                placeholder="Ex: 1,68&#8364;"
+              />
+            </div>
+            <div class="table-row-2-column">
+              <label for="">Magasin</label>
+              <select class="input-row-2" name="type-de-produit">
+                <option value="">Select</option>
+                <option class="option" value="alimentaire">Intermarché</option>
+                <option class="option" value="entretien">Lidl</option>
+                <option class="option" value="animaux">Carrefour</option>
+              </select>
+            </div>
+            <div class="table-row-2-column">
+              <label for="start">Date</label>
+              <div class="calendar-container">
+                <input
+                  class="calendar"
+                  value="2023-01-22"
+                  type="date"
+                  id="start"
+                  min="2023-01-01"
+                  max="2223-12-31"
+                />
+                <i class="fa-solid fa-xmark x-icon"></i>
+              </div>
+            </div>
+            <div class="table-row-2-column">
+              <label class="label-opac">label opac</label>
+              <button
+                class="button small tertiary-default tertiary-default-produit"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button
+                class="button small tertiary-default tertiary-default-produit"
+              >
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="table-row-2">
+            <div class="table-row-2-column">
+              <label for="">Prix</label>
+              <input
+                class="input-row-2"
+                type="text"
+                placeholder="Ex: 1,68&#8364;"
+              />
+            </div>
+            <div class="table-row-2-column">
+              <label for="">Magasin</label>
+              <select class="input-row-2" name="type-de-produit">
+                <option value="">Select</option>
+                <option class="option" value="alimentaire">Intermarché</option>
+                <option class="option" value="entretien">Lidl</option>
+                <option class="option" value="animaux">Carrefour</option>
+              </select>
+            </div>
+            <div class="table-row-2-column">
+              <label for="start">Date</label>
+              <div class="calendar-container">
+                <input
+                  class="calendar"
+                  value="2023-01-22"
+                  type="date"
+                  id="start"
+                  min="2023-01-01"
+                  max="2223-12-31"
+                />
+                <i class="fa-solid fa-xmark x-icon"></i>
+              </div>
+            </div>
+            <div class="table-row-2-column">
+              <label class="label-opac">label opac</label>
+              <button
+                class="button small tertiary-default tertiary-default-produit"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button
+                class="button small tertiary-default tertiary-default-produit"
+              >
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="product-select-container">
+          <img
+            class="product-photo"
+            src="/images/potato.jpg"
+            alt="Photo de Polina Tankilevitch: https://www.pexels.com/fr-fr/photo/nourriture-patates-recolte-frais-4110476/"
+          />
+        </div>
+      </div>
+    </section>
+    <a href="./buttons.html" class="back-home">buttons page</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="first-column">
+          <p class="p1">Mention légales</p>
+          <p>Nous contacter</p>
+        </div>
+
+        <div class="social-icons">
+          <!-- social icon -->
+          <a href="#!" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- social icon -->
+          <a href="#!" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- social icon -->
+          <a href="#!" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="third-column">
+          <p class="p1">Fresh products</p>
+          <p>2022</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
