@@ -46,3 +46,14 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+
+  h2 {
+    font-weight: 800;
+  }
+}

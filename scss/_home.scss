@@ -1,6 +1,6 @@
 .mobile-home-container {
   margin: 5rem auto 0 auto;
-  height: calc(100vh - 52px - 141px);
+  height: calc(100% - 52px - 141px);
   padding: 0 2rem;
   max-width: 1170px;
 }
@@ -93,7 +93,7 @@
 
   .desktop-home-container {
     display: block;
-    height: calc(100vh - 52px - 141px);
+    height: 100vh;
     margin: 5rem auto 0 auto;
     padding: 0 2rem;
     max-width: 1170px;

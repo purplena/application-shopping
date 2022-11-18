@@ -85,19 +85,79 @@
     </nav>
     <!-- End of Navbar -->
 
-    <!-- Home page -->
-    <!-- mobile version -->
-    <section class="mobile-produit-container">
+    <!-- Ajouter produit page -->
+    <!-- Mobile & Tablette version -->
+    <section class="mobile-ajouter-produit-container">
       <!-- header and 'trier' button -->
       <div class="mobile-header">
         <h2>Ajouter un produit</h2>
-        <button class="button small tertiary-default tertiary-logo">
-          <img src="./images/trier.png" alt="filtrer-img" />Trier
-        </button>
+      </div>
+      <div class="section-ajouter-produit-container">
+        <form class="ajouter-produit-form">
+          <label>Nom</label>
+          <input class="form-input" type="text" placeholder="Ex: Patates 1kg" />
+          <label>Catégorie</label>
+          <select class="form-input" name="type-de-produit">
+            <option class="select" value="">Select</option>
+            <option class="option" value="alimentaire">Alimentaire</option>
+            <option class="option" value="entretien">
+              Entretien de maison
+            </option>
+            <option class="option" value="animaux">Animaux</option>
+          </select>
+
+          <div class="underline underline-1"></div>
+
+          <label for="">Prix</label>
+          <input class="form-input" type="text" placeholder="Ex: 1,68&#8364;" />
+          <label for="">Magasin</label>
+          <select class="form-input" name="type-de-produit">
+            <option value="">Select</option>
+            <option class="option" value="alimentaire">Intermarché</option>
+            <option class="option" value="entretien">Lidl</option>
+            <option class="option" value="animaux">Carrefour</option>
+          </select>
+          <label for="start">Date</label>
+          <div class="mobile-calendar-container">
+            <input
+              class="calendar form-input"
+              value="2023-01-22"
+              type="date"
+              id="start"
+              min="2023-01-01"
+              max="2223-12-31"
+            />
+            <i class="fa-solid fa-xmark x-icon"></i>
+          </div>
+          <button
+            class="button small tertiary-default tertiary-default-produit"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button
+            class="button small tertiary-default tertiary-default-produit"
+          >
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <div class="underline underline-2"></div>
+        </form>
+        <div class="ajouter-photo-container-default">
+          <img src="/images/ajouter-photo.png" alt="" />
+          <p class="p1">Photo du produit</p>
+          <p class="p2">(2mo max, formats .jpg ou .png)</p>
+          <button class="button medium choisir-fichier">
+            <i class="fa-solid fa-plus"></i>Choisir un fichier
+          </button>
+        </div>
+      </div>
+      <div class="button-container buton-container-mobile">
+        <a href="!#" class="button medium primary-default">ajouter</a>
+        <a href="!#" class="button medium tertiary-default">annuler</a>
       </div>
     </section>
-    <!-- Desktop Lay-out-->
-    <section class="desktop-produit-container">
+
+    <!-- Desktop version-->
+    <section class="desktop-ajouter-produit-container">
       <h2>Ajouter un produit</h2>
       <div class="section-container">
         <form class="ajouter-produit-form">
@@ -105,14 +165,14 @@
             <div class="table-row-1-column">
               <label>Nom</label>
               <input
-                class="input-row-1"
+                class="form-input"
                 type="text"
                 placeholder="Ex: Patates 1kg"
               />
             </div>
             <div class="table-row-1-column">
               <label>Catégorie</label>
-              <select class="input-row-1" name="type-de-produit">
+              <select class="form-input" name="type-de-produit">
                 <option class="select" value="">Select</option>
                 <option class="option" value="alimentaire">Alimentaire</option>
                 <option class="option" value="entretien">
@@ -126,14 +186,14 @@
             <div class="table-row-2-column">
               <label for="">Prix</label>
               <input
-                class="input-row-2"
+                class="form-input"
                 type="text"
                 placeholder="Ex: 1,68&#8364;"
               />
             </div>
             <div class="table-row-2-column">
               <label for="">Magasin</label>
-              <select class="input-row-2" name="type-de-produit">
+              <select class="form-input" name="type-de-produit">
                 <option value="">Select</option>
                 <option class="option" value="alimentaire">Intermarché</option>
                 <option class="option" value="entretien">Lidl</option>
@@ -172,14 +232,14 @@
             <div class="table-row-2-column">
               <label for="">Prix</label>
               <input
-                class="input-row-2"
+                class="form-input"
                 type="text"
                 placeholder="Ex: 1,68&#8364;"
               />
             </div>
             <div class="table-row-2-column">
               <label for="">Magasin</label>
-              <select class="input-row-2" name="type-de-produit">
+              <select class="form-input" name="type-de-produit">
                 <option value="">Select</option>
                 <option class="option" value="alimentaire">Intermarché</option>
                 <option class="option" value="entretien">Lidl</option>
@@ -215,16 +275,21 @@
             </div>
           </div>
         </form>
-        <div class="product-select-container">
-          <img
-            class="product-photo"
-            src="/images/potato.jpg"
-            alt="Photo de Polina Tankilevitch: https://www.pexels.com/fr-fr/photo/nourriture-patates-recolte-frais-4110476/"
-          />
+        <div class="ajouter-photo-container-default">
+          <img src="/images/ajouter-photo.png" alt="" />
+          <p class="p1">Photo du produit</p>
+          <p class="p2">(2mo max, formats .jpg ou .png)</p>
+          <button class="button medium choisir-fichier">
+            <i class="fa-solid fa-plus"></i>Choisir un fichier
+          </button>
         </div>
       </div>
+      <div class="button-container">
+        <a href="!#" class="button medium primary-default">ajouter</a>
+        <a href="!#" class="button medium tertiary-default">annuler</a>
+      </div>
+      <div class="temp"></div>
     </section>
-    <a href="./buttons.html" class="back-home">buttons page</a>
 
     <!-- Footer -->
     <footer class="footer">
